@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="Figma.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Figma"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Home"
+    Width="400"
+    Height="650"
+    Background="AliceBlue"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel.Resources>
+                <SolidColorBrush x:Key="fgColor">DarkBlue</SolidColorBrush>
+            </StackPanel.Resources>
+
+            <Label
+                Margin="0,25,0,0"
+                HorizontalAlignment="Center"
+                FontSize="38"
+                FontWeight="Bold"
+                Foreground="{StaticResource fgColor}">
+                clients
+            </Label>
+            <Label
+                HorizontalAlignment="Center"
+                FontSize="14"
+                FontWeight="Light"
+                Foreground="CornflowerBlue">
+                Welcome Tunar!
+            </Label>
+
+            <Button
+                Width="370"
+                Height="170"
+                Margin="0,100,0,0"
+                Background="{StaticResource fgColor}"
+                BorderBrush="{StaticResource fgColor}"
+                Content="create new client"
+                FontSize="38" />
+
+            <Button
+                Width="370"
+                Height="170"
+                Margin="0,25,0,0"
+                Background="{StaticResource fgColor}"
+                BorderBrush="{StaticResource fgColor}"
+                Content="all clients"
+                FontSize="38" />
+        </StackPanel>
+    </Grid>
+</Window>

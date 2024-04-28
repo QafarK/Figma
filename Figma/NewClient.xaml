@@ -1,0 +1,74 @@
+﻿<Window
+    x:Class="Figma.NewClient"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Figma"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="NewClient"
+    Width="400"
+    Height="650"
+    Background="AliceBlue"
+    mc:Ignorable="d">
+    <Grid>
+
+        <StackPanel Orientation="Vertical">
+            <StackPanel.Resources>
+                <SolidColorBrush x:Key="fgColor">DarkBlue</SolidColorBrush>
+            </StackPanel.Resources>
+
+            <Label
+                Margin="0,65,0,0"
+                HorizontalAlignment="Center"
+                FontSize="38"
+                FontWeight="Bold"
+                Foreground="{StaticResource fgColor}">
+                clients
+            </Label>
+
+            <Label
+                Margin="0,65,0,0"
+                HorizontalAlignment="Center"
+                FontSize="25"
+                FontWeight="DemiBold"
+                Foreground="{StaticResource fgColor}">
+                username
+            </Label>
+            <TextBox
+                Width="350"
+                Height="70"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Background="White"
+                BorderBrush="{StaticResource fgColor}"
+                FontSize="20" />
+
+
+            <Label
+                Margin="0,5,0,0"
+                HorizontalAlignment="Center"
+                FontSize="25"
+                FontWeight="DemiBold"
+                Foreground="{StaticResource fgColor}">
+                password
+            </Label>
+            <TextBox
+                Width="350"
+                Height="70"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Background="White"
+                BorderBrush="{StaticResource fgColor}"
+                FontSize="20" />
+
+            <Button
+                Width="350"
+                Height="75"
+                Margin="0,100,0,0"
+                Background="{StaticResource fgColor}"
+                BorderBrush="{StaticResource fgColor}"
+                Content="log in" />
+
+        </StackPanel>
+    </Grid>
+</Window>
